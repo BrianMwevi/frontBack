@@ -1,0 +1,30 @@
+7-1 CSS Architecture
+NB: Partials- The files inside the 7 directories are named starting with an "_name.scss"
+
+We have 7 directories in one
+1. Base dir - Contains resets for the website eg. 
+	i) _utilities.scss
+	ii) _animations.scss
+	iii) _typography.scss
+	iv) _base.scss
+
+2. Abstracts dir - These are scripts that do no ouput css codes. eg Variables, Mixins
+	i) _varibles.scss
+	ii) _mixins.scss
+	iii) _functions.scss
+
+3. Components dir - Files that contain blocks of reusable pieces of codes eg buttons etc 
+	i) _buttons.scss
+	ii) _forms.scss
+
+4. Layout dir - This has files for the global layouts of the page eg footer, header etc
+	i) _header.scss
+	ii) _footer.scss
+
+5. Pages dir - Contains files for different pages eg home-page etc 
+	i) _home.scss
+	ii) _about.scss
+
+6. Themes dir - This contains files for different themes eg the website with blue as the primary color or orangered etc
+
+7. Vendors dir - This contains 3rd party files eg bootstrap.css files

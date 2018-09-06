@@ -1,0 +1,27 @@
+.footer {
+	background-color:$primary-color;
+	color:$text-white;
+	padding: 5rem 0 1rem 0;
+	&-list {
+		list-style: none;
+	}
+	&-list--item {
+		padding-top:1rem;
+	}
+	&-list--link {
+		color:$text-white;
+		text-decoration: none;
+		&:hover {
+			text-decoration:underline;
+			color:$text-white;
+		}
+	}
+	&-icons {
+		margin-right: 1rem;
+		color:$text-white;
+		float:right;
+	}
+	&-copyrights {
+		margin-top: 2rem;
+	}
+}

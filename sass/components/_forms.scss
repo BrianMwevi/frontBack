@@ -1,0 +1,16 @@
+.form {
+	position: relative;
+	z-index: 0;
+	margin: 2rem 0;
+	&-control {
+		display: block;
+		width: 100%;
+		background-clip: padding-box;
+		padding: 0.75rem 1.6rem;
+	}
+	&-group {
+		display:block;
+		position:static;
+		margin-bottom: 1rem;
+	}
+}

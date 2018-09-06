@@ -1,0 +1,75 @@
+.secondary-heading {
+	font-size: 3rem;
+	font-weight:400;
+
+}
+
+.tertiary-heading {
+	font-size:2rem;
+	font-weight:300;
+	margin:5rem 0 1rem 0;
+}
+
+.subTertiary-heading {
+	font-size:1.5rem;
+	font-weight:200;
+	margin:1rem 0 .5rem 0;
+}
+
+.para-normal {
+	color:$tertiary-color;
+	margin: 1rem;
+}
+
+.container {
+	&-content--center {
+		text-align: center;
+	}
+	&-image--center {
+		width:50%;
+		margin:2rem auto;
+		display:block;
+	}
+}
+
+.background-color--primary {
+	margin:5rem 0;
+	background:$primary-color;
+	color:$text-white;
+	padding:1.5rem 0 7em 0;
+}
+
+.background-color--tertiary {
+	background-color:$gray-color;
+	padding:3rem 0 6rem 0;
+}
+
+.box {
+	background-color: $text-white;
+	&-center {
+		padding:2.5rem 3rem;
+		color:$text-black;
+		margin:1rem 0;
+	}
+	&-image {
+		height:50px;
+	}
+	&:hover {
+		box-shadow:0 0 .9rem rgba($text-black,0.2);
+	}
+
+}
+
+.gallery {
+	&-overlay{
+		// background-color:yellow;
+		background-image:url(../img/portfolio-2.jpg);
+		
+		&:hover {
+
+			background:linear-gradient(to bottom, rgba($primary-color,.3),rgba($secondary-color,.2));
+			
+		}	
+	}
+
+}

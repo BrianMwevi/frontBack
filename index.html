@@ -2,11 +2,305 @@
 <html>
 <head>
 	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Front to Back</title>
+	<meta name="description" content="">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<h1>Front to Back project</h1>
+	<header>
+		<nav class="navbar navbar-expand-md fixed-top">
+			<div class="container navbar-content">
+				<a href="index.html" class="navbar-brand">
+					<img src="img/logo.svg" class="navbar-logo img-fluid">
+				</a>
+				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+					<i class="fa fa-bars"></i>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav" >
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">About</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+						<button class="btn btn-danger btn-sm btn-danger--nav" data-toggle="modal" data-target="#loginModal">Login</button>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- Login model -->
+	<section class="modal" id="loginModal">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-title">
+					<button class=" btn btn-close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<form class="form-group">
+						<div class="form-group">
+							<label for="email">
+								Enter email
+							</label>
+							<input type="email" class="form-control" placeholder="name@company.com">
+						</div>
+						<div class="form-group  py-3">
+							<label for="password">
+								Password
+							</label>
+							<input type="password" class="form-control" placeholder="Min 8 characters">
+						</div>
+						<button class=" btn btn-danger">Login</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Home page section -->
+	<section class="landing">
+		<div  class="landing-img">
+			<div class="container landing-container">
+				<div class="row">
+					<div class="col-md-6">
+						<h2 class="secondary-heading">Move work<br> forward</h2>	
+						<p class="para-normal pt-4">Lorem ipsum dolor sit amet, consectetur. Elsion <br> sicing elit. Ad, eligendi.</p>
+						<form action="" class="form">
+							<div class="input-group pt-4">
+								<input type="email" class="form-control" placeholder="Name@company.com">
+								<button class="btn btn-danger btn-append input-group-append">Get Started</button>
+						</div>
+						</form>
+					</div>
+					<div class="col-md-6 ">
+						<img src="img/illustration-hero.svg" alt="" class="img-fluid d-none d-md-block">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Project intro -->
+	<section class="landing-container">
+		<div class="container container-content--center">
+			<h2 class="subTertiary-heading">Track projects from start to finish</h2>
+			<p class="para-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum obcaecati, iste.</p>
+			<a href="#" class="btn btn-danger">Learn More</a>
+			<div class="row">
+				<div class="col-md-7 container-image--center">
+					<img src="img/illustration-1.svg" alt="" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Quote section -->
+	<section id="quote" class="background-color--primary">
+		<div class="container container-content--center">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="subTertiary-heading">Do great things together</h2>
+					<p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum iusto delectus sint <br> repellendus repudiandae. Deleniti veritatis tempore autem doloribus.</p>
+					<button class="btn btn-danger btn-outline">Learn More</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Integration section -->
+	<section id="integration">
+		<div class="container container-content--center">
+			<h2 class="tertiary-heading">Intergrations</h2>
+			<p class="para-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem<br> earum ipsam qui exercitationem tenetur sit odio.</p>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="box">
+						<div class="box-center">
+							<img src="img/monitor.svg" alt="Desktop image" class="img-fluid box-image">
+							<h3 class="subTertiary-heading">Web Design</h3>
+							<p class="para-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, totam!</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="box">
+						<div class="box-center">
+							<img src="img/target.svg" alt="Target image" class="img-fluid box-image">
+							<h3 class="subTertiary-heading">Print</h3>
+							<p class="para-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, corporis.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="box">
+						<div class="box-center">
+							<img src="img/chat.svg" alt="Chat" class="img-fluid box-image">
+							<h3 class="subTertiary-heading">SEO and SEM</h3>
+							<p class="para-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, harum.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="box">
+						<div class="box-center">
+							<img src="img/idea.svg" alt="Idea" class="img-fluid box-image">
+							<h3 class="subTertiary-heading">Consulting</h3>
+							<p class="para-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, error.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="box">
+						<div class="box-center">
+							<img src="img/coffee-cup.svg" alt="Coffee" class="img-fluid box-image">
+							<h3 class="subTertiary-heading">Email Marketing</h3>
+							<p class="para-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, adipisci.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="box">
+						<div class="box-center">
+							<img src="img/pen.svg" alt="Pen" class="img-fluid box-image">
+							<h3 class="subTertiary-heading">UX/UI</h3>
+							<p class="para-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, officia!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- clients -->
+	<section class="background-color--tertiary">
+		<div class="container container-content--center">
+			<h2 class="tertiary-heading">Trusted by teams everywhere</h2>
+			<p class="para-normal">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus <br> voluptate, iusto, rem alias...
+			</p>
+			<div class="row">
+				<div class="col-md-2"><img src="img/client-1.svg" alt="First client" class="img-fluid box-image my-5	"></div>
+				<div class="col-md-2"><img src="img/client-2.svg" alt="Second client" class="img-fluid box-image my-5	"></div>
+				<div class="col-md-2"><img src="img/client-3.svg" alt="Third client" class="img-fluid box-image my-5	"></div>
+				<div class="col-md-2"><img src="img/client-4.svg" alt="Fourth client" class="img-fluid box-image my-5	"></div>
+				<div class="col-md-2"><img src="img/client-5.svg" alt="Sixth client" class="img-fluid box-image my-5	"></div>
+				<div class="col-md-2"><img src="img/client-6.svg" alt="Seventh client" class="img-fluid box-image my-5	"></div>
+			</div>
+		</div>
+	</section>
+	<!-- How it works -->
+	<section>
+		<div class="container container-content--center my-5 py-5">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="tertiary-heading">Curious how Appton works for large <br> organizations?</h2>
+						<p class="para-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ducimus <br> commodi voluptas maxime.</p>
+						<button class="btn btn-danger my-4">Get Started</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- How it works -->
+	<section class="background-color--tertiary">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 container-content--center">
+					<h2 class="tertiary-heading">Curious how Appton<br> works for large</h2>
+					<p class="para-normal ml-0 mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Fugiat possimus est voluptas officiis ducimus congahtw.</p>
+					<button class="btn btn-danger my-3">Learn More</button>
+				</div>
+				<div class="col-md-6">
+					<img src="img/illustration-2.svg" alt="3 people" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Portfolio section -->
+	<section class="gallery">
+		<div class="container container-content--center">
+			<h2 class="tertiary-heading">Portfolio</h2>
+			<p class="para-normal mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			<div class="row">
+				<div class="col-md-4 p-0 gallery-overlay"></div>
+				<div class="col-md-4 p-0 "><img src="img/portfolio-2.jpg" alt="" class="img-fluid gallery-overlay"></div>
+				<div class="col-md-4 p-0"><img src="img/portfolio-3.jpg" alt="" class="img-fluid"></div>
+				<div class="col-md-4 p-0"><img src="img/portfolio-4.jpg" alt="" class="img-fluid"></div>
+				<div class="col-md-4 p-0"><img src="img/portfolio-5.jpg" alt="" class="img-fluid"></div>
+				<div class="col-md-4 p-0"><img src="img/portfolio-6.jpg" alt="" class="img-fluid"></div>
+			</div>
+		</div>
+	</section>
+	<!-- newsletter -->
+	<section>
+		<div class="container container-content--center">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="tertiary-heading">Get started today</h1>
+					<p class="para-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate praesentium minima <br>quia expedita beatae, officiis hic cum in.</p>
+					<form action="" class="form">
+							<div class="input-group pt-4">
+								<input type="email" class="form-control" placeholder="Name@company.com">
+								<button class="btn btn-danger btn-append input-group-append">Get Started</button>
+							</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Footer section -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<img src="img/logo-footer.svg" alt="Logo" class="img-fluid box-image">
+				</div>
+				<div class="col-md-3">
+					<h3 class="subTertiary-heading">Site pages</h3>
+					<ul class="footer-list">
+						<li class="footer-list--item"><a href="#" class="footer-list--link"> Home</a></li>
+						<li class="footer-list--item"><a href="#" class="footer-list--link"> FAQ</a></li>
+						<li class="footer-list--item"><a href="#" class="footer-list--link"> Contact</a></li>
+						<li class="footer-list--item"><a href="#" class="footer-list--link"> Text Page</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h3 class="subTertiary-heading">Product</h3>
+					<ul class="footer-list">
+						<li class="footer-list--item"><a href="#" class="footer-list--link"> Why Appton</a></li>
+						<li class="footer-list--item"><a href="#" class="footer-list--link"> Enterprise</a></li>
+						<li class="footer-list--item"><a href="#" class="footer-list--link"> Blog</a></li>
+						<li class="footer-list--item"><a href="#" class="footer-list--link"> Pricing</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h3 class="subTertiary-heading">Resources</h3>
+					<ul class="footer-list">
+						<li class="footer-list--item"><a href="#" class="footer-list--link"> Download</a></li>
+						<li class="footer-list--item"><a href="#" class="footer-list--link"> Help Center</a></li>
+						<li class="footer-list--item"><a href="#" class="footer-list--link"> Guides</a></li>
+						<li class="footer-list--item"><a href="#" class="footer-list--link"> Partners</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container  footer-copyrights">
+			<div class="row">
+				<div class="col-md-6">
+					<p>&copy; All rights reserved. BMW resource. Designed by Brian Mwevi.</p>
+				</div>
+				<div class="col-md-6">
+					<a href="#" class="footer-media-icons" target="_blank"><i class="fa fa-facebook footer-icons"></i></a>
+					<a href="#" class="footer-media-icons" target="_blank"><i class="fa fa-twitter footer-icons"></i></a>
+					<a href="#" class="footer-media-icons" target="_blank"><i class="fa fa-youtube-play footer-icons"></i></a>
+					<a href="#" class="footer-media-icons" target="_blank"><i class="fa fa-vimeo footer-icons"></i></a>
+					<a href="#" class="footer-media-icons" target="_blank"><i class="fa fa-pinterest footer-icons"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/umd/popper.min.js"> </script>
+  <script src="js/bootstrap.min.js"></script>
+
 </body>
 </html>

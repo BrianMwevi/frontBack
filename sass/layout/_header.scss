@@ -1,0 +1,20 @@
+// PRIMARY HEADER
+.navbar {
+	padding:1rem 0;
+
+	& .navbar-logo {
+	height: auto;
+	width: 7.5rem;
+	}
+}
+
+a {
+	color:$primary-color;
+	&:hover {
+		color:$secondary-color;
+		border-bottom:2px solid $primary-color;
+	}
+	&:focus {
+		color:$secondary-color;
+	}
+}
